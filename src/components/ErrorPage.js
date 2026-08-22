@@ -40,7 +40,7 @@ const ErrorPage = ({ status, title, description, logo, back }) => {
 
   return (
     <div className={classes.container}>
-      {logo && <img className={classes.logo} src={logo} alt="Logo of openIMIS" />}
+      {logo && <img className={classes.logo} src={logo} alt="HealthPay Payer System" />}
       {status && (
         <Typography variant="h1" className={classes.title}>
           {status}

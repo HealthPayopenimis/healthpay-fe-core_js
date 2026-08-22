@@ -156,7 +156,7 @@ const App = (props) => {
   if (!auth.isInitialized) return null;
   return (
     <>
-      <Helmet titleTemplate="%s - openIMIS" defaultTitle="openIMIS" />
+      <Helmet titleTemplate="%s - HealthPay Payer System" defaultTitle="HealthPay Payer System" />
       <CssBaseline />
       <ModulesManagerProvider value={modulesManager}>
         <PublicPageLanguageProvider>

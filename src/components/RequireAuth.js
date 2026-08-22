@@ -259,7 +259,7 @@ const RequireAuth = (props) => {
           <Button className={classes.appName} onClick={(e) => (window.location.href = "/front")}>
             {isAppBarMenu && (
               <Hidden smDown implementation="css">
-                <img className={classes.logo} src={logo} alt="Logo of openIMIS" />
+                <img className={classes.logo} src={logo} alt="HealthPay Payer System" />
               </Hidden>
             )}
             {!disableTextLogo && (
@@ -309,7 +309,7 @@ const RequireAuth = (props) => {
           <Button className={classes.appName} onClick={(e) => history.push("/")}>
             {isAppBarMenu && (
               <Hidden smDown implementation="css">
-                <img className={classes.logo} src={logo} alt="Logo of openIMIS" />
+                <img className={classes.logo} src={logo} alt="HealthPay Payer System" />
               </Hidden>
             )}
             {!disableTextLogo && (
