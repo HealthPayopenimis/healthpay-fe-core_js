@@ -384,6 +384,7 @@ export function login(credentials) {
     if (credentials) {
       const mutation = `mutation authenticate($username: String!, $password: String!) {
             tokenAuth(username: $username, password: $password) {
+              token
               refreshExpiresIn
             }
           }`;
@@ -432,7 +433,7 @@ export function fetchCsrfToken(jwtToken) {
 
     return dispatch(
       graphqlMutation(csrfQuery, {}, ["CORE_AUTH_CSRTOKEN_REQ", "CORE_AUTH_CSRTOKEN_RESP", "CORE_AUTH_ERR"], {}, false, {
-        "Authorization": `JWT ${jwtToken}`,
+        "Authorization": `Bearer ${jwtToken}`,
       }),
     );
   };
