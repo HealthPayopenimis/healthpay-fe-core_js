@@ -233,5 +233,8 @@
   "core.back.buttonText": "Back",
   "roleManagement.editButton.buttonText": "Edit",
   "roleManagement.duplicateButton.buttonText": "Duplicate",
-  "roleManagement.deleteButton.buttonText": "Delete"
+  "roleManagement.deleteButton.buttonText": "Delete",
+  "core.DatePicker.ok": "OK",
+  "core.DatePicker.cancel": "Cancel",
+  "core.DatePicker.clear": "Clear"
 }

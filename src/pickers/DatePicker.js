@@ -177,6 +177,13 @@ class openIMISDatePicker extends Component {
             label={!!label ? formatMessage(intl, module, label) : null}
             onChange={this.dateChange}
             disablePast={disablePast}
+            // @material-ui/pickers v3 hardcodes English action labels (OK /
+            // CANCEL / CLEAR) regardless of the Moment locale, so they must be
+            // supplied explicitly or the dialog stays part-English in an RTL
+            // Arabic form.
+            okLabel={formatMessage(intl, "core", "DatePicker.ok")}
+            cancelLabel={formatMessage(intl, "core", "DatePicker.cancel")}
+            clearLabel={formatMessage(intl, "core", "DatePicker.clear")}
           />
         </FormControl>
       );
